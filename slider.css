@@ -1,0 +1,427 @@
+
+
+.slidepanel
+{
+    background: #F9F9F9;
+}
+.slider
+{
+    position: relative;
+    width: 100%;
+    height: 35vw;
+    overflow: hidden;
+}
+
+.slider a img
+{
+    height: 2vw;
+}
+.slideimg1
+{
+    height: 35.5vw;
+    width: 25vw;
+}
+
+.slideimg2
+{
+    height: 25vw;
+    width: 60vw;
+}
+
+.slideimg3
+{
+    height: 29vw;
+    width: 64.5vw;
+}
+
+.slideimg4
+{
+    height: 28.5vw;
+    width: 44vw;
+}
+
+.slider .slide
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease-in-out;
+}
+
+.slider .slide:nth-child(1)
+{
+    transform: translateX(0);
+}
+.slider .slide:nth-child(2)
+{
+    transform: translateX(100%);
+}
+.slider .slide:nth-child(3)
+{
+    transform: translateX(200%);
+}
+.slider .slide:nth-child(4)
+{
+    transform: translateX(300%);
+}
+
+.navigation
+{
+    display: grid;
+    grid-template: 100% / 88.3%  3.7%  3.7%  4.9%;
+
+}
+
+.navigation button
+{
+    margin-bottom: 2vw;
+    border: none;
+    border-radius: 1.5vw;
+    cursor: pointer;
+    background-color: #F9F9F9;
+}
+
+.navigation button img
+{
+    height: 3vw;
+}
+
+.navigation button:hover
+{
+    background-color: #ccc;
+}
+
+.frame1-content :nth-child(1)
+{
+    grid-area: 1 / 5 / 8 / 5;
+}
+.frame1-content :nth-child(2)
+{
+    grid-area: 2 / 2 / 2 / 2;
+}
+.frame1-content :nth-child(3)
+{
+    grid-area: 3 / 3 / 3 / 3;
+}
+.frame1-content :nth-child(4)
+{
+    grid-area: 4 / 7 / 5 / 7;
+}
+.frame1-content :nth-child(5)
+{
+    grid-area: 6 / 7 / 6 / 7;
+}
+.frame1-content :nth-child(6)
+{
+    grid-area: 7 / 7 / 7 / 7;
+}
+
+.frame1-content
+{
+    display: grid;
+    grid-template: 5% 6% 5% 25% 8% 17% 21% / 5% 4% 2% 5% 25% 4% 28%;
+    height:40vw;
+    background: #F9F9F9;
+}
+
+.frame1 h1, h2, h3, h4, h5, a
+{
+    margin: 0;
+}
+.frame1 h5
+{
+    font-size: 2vw;
+    font-weight: 350;
+    line-height: 2vw;
+    color: #03A543;
+}
+.frame1 h6
+{
+    font-size: 1vw;
+    font-weight: 350;
+    line-height: 1vw;
+    opacity: 30%;
+}
+.frame1 h1
+{
+    font-size: 3.8vw;
+    font-weight: 500;
+    line-height: 3.8vw;
+    text-transform: uppercase;
+}
+.frame1 span
+{
+    font-size: 3.2vw;
+    font-weight: 350;
+    line-height: 3.2vw;
+    color: #03A543;
+}
+.frame1 h2
+{
+    font-size: 1.3vw;
+    font-weight: 350;
+    line-height: 1.3vw;
+}
+.frame1 a
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.frame1 a img
+{
+    margin-left: 0.8vw;
+}
+
+
+
+.frame2-content :nth-child(1)
+{
+    grid-area: 1 / 6 / 8 / 6;
+}
+.frame2-content :nth-child(2)
+{
+    grid-area: 2 / 2 / 2 / 2;
+}
+.frame2-content :nth-child(3)
+{
+    grid-area: 3 / 3 / 3 / 3;
+}
+.frame2-content :nth-child(4)
+{
+    grid-area: 4 / 2 / 4 / 5;
+}
+.frame2-content :nth-child(5)
+{
+    grid-area: 5 / 2 / 5 / 5;
+}
+.frame2-content :nth-child(6)
+{
+    grid-area: 6 / 2 / 6 / 2;
+}
+
+
+
+.frame2-content
+{
+    display: grid;
+    grid-template: 7% 7% 4% 42% 22% 5% 14% / 3% 4% 3% 22% 3% 58% 3%;
+    height: 40vw;
+    background: #F9F9F9;
+}
+
+.frame2 h1
+{
+    font-size: 3.4vw;
+    font-weight: 500;
+    line-height: 4.2vw;
+    text-transform: uppercase;
+}
+.frame2 h2
+{
+    font-size: 1.3vw;
+    font-weight: 350;
+    line-height: 1.3vw;
+}
+.frame2 h5
+{
+    font-size: 2vw;
+    font-weight: 350;
+    line-height: 2vw;
+    color: #03A543;
+    margin: 0;
+}
+.frame2 h6
+{
+    font-size: 1vw;
+    font-weight: 350;
+    line-height: 1vw;
+    opacity: 30%;
+}
+.frame2 span
+{
+    font-size: 3.4vw;
+    font-weight: 350;
+    line-height: 3.4vw;
+    color: #03A543;
+}
+.frame2 a
+{   
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.frame2 a img
+{
+    margin-left: 0.8vw;
+}
+
+
+.frame3-content :nth-child(1)
+{
+    grid-area: 1 / 5 / 6 / 7;
+}
+.frame3-content :nth-child(2)
+{
+    grid-area: 2 / 2 / 2 / 2;
+}
+.frame3-content :nth-child(3)
+{
+    grid-area: 3 / 3 / 3 / 3;
+}
+.frame3-content :nth-child(4)
+{
+    grid-area: 4 / 6 / 4 / 6;
+}
+.frame3-content :nth-child(5)
+{
+    grid-area: 5 / 6 / 5 / 6;
+}
+
+
+
+.frame3-content
+{
+    display: grid;
+    grid-template: 5% 10% 40% 26% 2% 6%/ 5% 4% 2% 7% 4% 56% 22%;
+    height: 40vw;
+    background: #F9F9F9;
+}
+
+.frame3 h1
+{
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 3.2vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+.frame3 h2
+{
+    font-size: 1vw;
+    font-weight: 350;
+    line-height: 1vw;
+}
+.frame3 h5
+{
+    font-size: 2.2vw;
+    font-weight: 350;
+    line-height: 2.2vw;
+    color: #03A543;
+    margin: 0;
+}
+.frame3 h6
+{
+    font-size: 1vw;
+    font-weight: 350;
+    line-height: 1vw;
+    opacity: 30%;
+}
+.frame3 span
+{
+    font-size: 3vw;
+    font-weight: 350;
+    line-height: 3.2vw;
+    color: #03A543;
+}
+.frame3 a
+{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.frame3 a img
+{
+    margin-left: 0.8vw;
+}
+
+.frame4-content :nth-child(1)
+{
+    grid-area: 1 / 3 / 5 / 3;
+}
+.frame4-content :nth-child(2)
+{
+    grid-area: 2 / 4 / 2 / 4;
+}
+.frame4-content :nth-child(3)
+{
+    grid-area: 3 / 5 / 3 / 5;
+}
+.frame4-content :nth-child(4)
+{
+    grid-area: 3 / 2 / 3 / 2;
+}
+.frame4-content :nth-child(5)
+{
+    grid-area: 4 / 2 / 4 / 2;
+}
+.frame4-content :nth-child(6)
+{
+    grid-area: 5 / 2 / 5 / 2;
+}
+
+.frame4-content
+{
+    display: grid;
+    grid-template: 8% 8% 42% 9% 30%/ 5% 39% 45% 4% 7%;
+    height: 40vw;
+    background: #F9F9F9;
+}
+
+
+.frame4 h1
+{
+    font-size: 3.3vw;
+    font-weight: 500;
+    line-height: 4.2vw;
+    text-transform: uppercase;
+}
+.frame4 h2
+{
+    font-size: 1.3vw;
+    font-weight: 350;
+    line-height: 1.5vw;
+}
+.frame4 h5
+{
+    font-size: 2.5vw;
+    font-weight: 350;
+    line-height: 2.5vw;
+    color: #03A543;
+    margin: 0;
+}
+.frame4 h6
+{
+    font-size: 1vw;
+    font-weight: 350;
+    line-height: 1vw;
+    opacity: 30%;
+}
+.frame4 span
+{
+    font-size: 3.3vw;
+    font-weight: 350;
+    line-height: 4.2vw;
+    color: #03A543;
+}
+.frame4 a
+{   
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.frame4 a img
+{
+    margin-left: 0.8vw;
+}

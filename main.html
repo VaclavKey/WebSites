@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTL</title>
+    <link rel="icon" type="image/x-icon" href="resources/images/icons/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="resources/fonts/Stem/stylesheet.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <header>
+        <div class="panel1">
+            <a href="#">EN</a>
+            <a href="#">Скачать каталог</a>
+            <a href="#"><img src="resources/images/icons/btn_search.png"></a>
+            <a href="#"><img src="resources/images/icons/btn_favourite.png"></a>
+            <a href="#">Войти <img src="resources/images/icons/btn_user.png"></a>
+        </div>
+
+        <div class="panel2">
+            <a href="#"><img src="resources/images/icons/logo.png"></a>
+            <h1></h1>
+            <a href="#">Каталог</a>
+            <a href="#">О компании</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Где купить?</a>
+            <a href="#">Новости</a>
+            <a href="#">Контакты</a>
+            <h1></h1>
+            <a href="#"><img src="resources/images/icons/btn_phone.png">+7 (495) 125-10-07</a>
+        </div>
+
+        <div class="paneltabletclosed">
+            <a href="#" class="green"><img src="resources/images/icons/btn_ruler.png"></a>
+            <a href="#"><img src="resources/images/icons/logo.png"></a>
+            <a href="#"><img src="resources/images/icons/btn_user.png"></a>
+            <a href="#" onclick="DropMenu();" id="menu_btn"><img src="resources/images/icons/btn_menu.png" style="height: 1vw;" class="menuicon"></a>
+        </div>
+
+
+
+        <!-- <div class="panelphonedropped">
+            <a href="#"><img src="resources/images/icons/logo.png"></a>
+            <a href="#">EN</a>
+            <a href="#"><img src="resources/images/icons/btn_search.png"></a>
+            <a href="#"><img src="resources/images/icons/btn_favourite.png"></a>
+            <a href="#">Войти<img src="resources/images/icons/btn_user.png" style="margin-left: 0.8vw"></a>
+            <a href="#" onclick="DropMenu();" id="menu_btn" s><img src="resources/images/icons/btn_exit.png" class="menuicon"></a>
+        </div> -->
+
+
+
+        <div class="menu">
+            <div class="tabletmenuheader">
+                <a href="#"><img src="resources/images/icons/logo.png"></a>
+                <h1></h1>
+                <a href="#">EN</a>
+                <a href="#"><img src="resources/images/icons/btn_search.png"></a>
+                <a href="#"><img src="resources/images/icons/btn_favourite.png"></a>
+                <a href="#">Войти<img src="resources/images/icons/btn_user.png" style="margin-left: 0.8vw"></a>
+                <a href="#" onclick="DropMenu();" id="exit_btn" s><img src="resources/images/icons/btn_exit.png" class="menuicon"></a>
+            </div>
+            
+
+
+            <div class="tabletmenuinner">
+
+                <a href="#">Каталог</a>
+                <a href="#">Решения</a>
+                <a href="#">О компании</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Где купить?</a>
+                <a href="#">Новости</a>
+                <a href="#">Контакты</a>
+
+                <div class="menucontact">
+                    <h1>Телефон</h1>
+                    <h2>+7 (495) 125-10-07</h2>
+                </div>
+        
+                <div class="menucontact">
+                    <h1>Почта</h1>
+                    <h2>INFO@H-T-L.RU</h2>
+                </div>
+                <button class="menubutton1">Скачать каталог</button>
+                <button class="menubutton2"><img src="resources/images/icons/btn_ruler.png"><span>Бесплатный замер</span></button>
+            </div>
+
+            <div class="phonemenuheader">
+                <a href="#"><img src="resources/images/icons/logo.png"></a>
+                <a href="#">EN</a>
+                <a href="#"><img src="resources/images/icons/btn_search.png"></a>
+                <a href="#" onclick="DropMenu();" id="exit_btn" s><img src="resources/images/icons/btn_exit.png" class="menuicon"></a>
+                <a href="#">Скачать каталог</a>
+                <a href="#"><img src="resources/images/icons/btn_favourite.png"></a>
+                <a href="#">Войти</a>
+            </div>
+
+            <div class="phonemenuinner">
+
+                <a href="#" style="margin-top: 8vw;">Каталог</a>
+                <a href="#">Решения</a>
+                <a href="#">О компании</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Где купить?</a>
+                <a href="#">Новости</a>
+                <a href="#">Контакты</a>
+
+                <div class="menucontact">
+                    <h1>Телефон</h1>
+                    <h2>+7 (495) 125-10-07</h2>
+                </div>
+        
+                <div class="menucontact">
+                    <h1>Почта</h1>
+                    <h2>INFO@H-T-L.RU</h2>
+                </div>
+                
+                <button class="menubutton2"><img src="resources/images/icons/btn_ruler.png"><span>Бесплатный замер</span></button>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+        <div class="slidepanel">
+            <div class="slider">
+                <div class="slide">
+                    <div class="frame1">
+                        <div class="frame1-content">
+                            <img src="resources/images/slider/slide1.png" class="slideimg1">
+                            <h5>/01</h5>
+                            <h6 >/04</h6>
+                            <h1>Дизайнерские светильники <span>OFL DROP</span></h1>
+                            <h2>Светильники OFL DROP имеют изящную<br> запоминающуюся форму, а также обладают рядом<br> интересных технических особенностей, выгодно<br> отличающих их от конкурентов</h2>
+                            <a href="#"><h2>Подробнее</h2> <img src="resources/images/icons/btn_circle.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="frame2">
+                        <div class="frame2-content">
+                            <img src="resources/images/slider/slide2.png" class="slideimg2">
+                            <h5>/01</h5>
+                            <h6>/04</h6>
+                            <h1>Дизайнерские светильники <span>OFL DROP</span></h1>
+                            <h2>Светильники OFL DROP имеют изящную<br> запоминающуюся форму, а также обладают<br> рядом интересных технических особенностей,<br> выгодно отличающих их от конкурентов</h2>
+                            <a href="#"><h2>Подробнее</h2><img src="resources/images/icons/btn_circle.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="frame3">
+                        <div class="frame3-content">
+                            <img src="resources/images/slider/slide3.png" class="slideimg3">
+                            <h5>/01</h5>
+                            <h6>/04</h6>
+                            <h1>Дизайнерские светильники<br><span>OFL DROP</span></h1>               
+                            <a href="#"><h2>Подробнее</h2><img src="resources/images/icons/btn_circle.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="frame4">
+                        <div class="frame4-content">
+                            <img src="resources/images/slider/slide4.png" class="slideimg4">
+                            <h5>/01</h5>
+                            <h6>/04</h6>
+                            <h1>Дизайнерские светильники<br><span>OFL DROP</span></h1>    
+                            <h2>Светильники OFL DROP имеют изящную<br> запоминающуюся форму, а также обладают<br> рядом интересных технических особенностей,<br> выгодно отличающих их от конкурентов</h2>           
+                            <a href="#"><h2>Подробнее</h2><img src="resources/images/icons/btn_circle.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <h1></h1>
+                <button class="prev"><img src="resources/images/icons/btn_prev.png"></button>
+                <button class="next"><img src="resources/images/icons/btn_next.png"></button>
+            </div> 
+        </div>
+
+        <div class="about">
+            <h2>О компании</h2>
+            <h1><span>HTL</span> — Российская компания<br> по производству светодиодного освещения, Эксперт в области интерьерного и уличного освещения</h1>
+            <h3>Создаём современное высококачественное светотехническое<br> оборудование и отдельные комплектующих для освещения<br> интерьеров жилых и коммерческих помещений</h3>
+            <a href="#" class="button">О компании <img src="resources/images/icons/btn_circle.png"></a>
+        </div>
+
+        <div class="boxes">
+            <div class="box">
+                <h1>8</h1>
+                <h2>На рынке более 8 лет</h2>
+            </div>
+            <div class="box">
+                <h1>5</h1>
+                <h2>Гарантия на продукцию</h2>
+            </div>
+            <div class="box">
+                <h1>1</h1>
+                <h2>Доставка от 1 дня</h2>
+            </div>
+        </div>
+        
+        <div class="title">
+            <h1>Категории продукции</h1>
+            <a href="#" class="button">Перейти в каталог<img src="resources/images/icons/btn_circle.png"></a>
+        </div>
+
+        <div class="categories">
+            <div class="category"><a href="#"><h3>HTL BUSINESS</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+            <div class="category"><a href="#"><h3>HTL ARCHITECTURAL</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+            <div class="category"><a href="#"><h3>HTL OUTDOOR</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+            <div class="category"><a href="#"><h3>HTL RETAIL</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+            <div class="category"><a href="#"><h3>HTL HOME(DIY)</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+            <div class="category"><a href="#"><h3>HTL EMERGENCY</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+            <div class="category"><a href="#"><h3>HTL PRODUCTION</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+            <div class="category"><a href="#"><h3>HTL INTERIOR</h3><img src="resources/images/icons/btn_circle.png" alt=""></a></div>
+        </div>
+
+        <div class="portfolio">
+            <div class="title">
+                <h1>Портфолио</h1>
+                <a href="#" class="button">Все проекты<img src="resources/images/icons/btn_circle.png" alt=""></a>
+            </div>
+
+            <div class="sections">
+                <h1></h1>
+                <a href="#">Все (45)</a>
+                <a href="#">Уличное (6)</a>
+                <a href="#">Промышленное (20)</a>
+                <a href="#">Интерьерное (1)</a>
+                <a href="#">Ретейл (15)</a>
+                <a href="#">Медицинское (3)</a>
+                <h1></h1>
+                <button><img src="resources/images/icons/btn_prev.png"></button>
+                <button><img src="resources/images/icons/btn_next.png"></button>
+            </div>
+
+            <div class="cards">
+                <div class="card" style="background-image: url(resources/images/cards/card1.png);">
+                    <div class="cardinfo">
+                        <h1></h1>
+                        <h1>Уличное</h1>
+                        <h2>Тюбинг парк Билайн<br> Парк Горького</h2>
+                        <a href="#" class="button">Подробнее<img src="resources/images/icons/btn_circle.png"></a>
+                    </div>
+                </div>
+
+                <div class="card" style="background-image: url(resources/images/cards/card2.png);">
+                    <div class="cardinfo">
+                        <h1></h1>
+                        <h1>Промышленное</h1>
+                        <h2>Черкизовский<br> мясокомбинат</h2>
+                        <a href="#" class="button">Подробнее<img src="resources/images/icons/btn_circle.png"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="title">
+            <h1>Новости и события</h1>
+            <a href="#" class="button">Все новости<img src="resources/images/icons/btn_circle.png" alt=""></a>
+        </div>
+        <div class="newsevents">
+            <img src="resources/images/news.png" class="newsimg">
+            <div class="news">
+                <h1>17/10/22</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud "Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                <a href="#" class="button">Читать<img src="resources/images/icons/btn_circle.png"></a>
+            </div>
+            <div class="news" style="border-bottom: 1px lightgray solid;">
+                <h1>17/10/22</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</h3>
+                <a href="#" class="button">Читать<img src="resources/images/icons/btn_circle.png"></a>
+            </div>
+            <div class="news" style="border-bottom: 1px lightgray solid;">
+                <h1>17/10/22</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</h3>
+                <a href="#" class="button">Читать<img src="resources/images/icons/btn_circle.png"></a>
+            </div>
+            <div class="news" style="border-bottom: 1px lightgray solid;">
+                <h1>17/10/22</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</h3>
+                <a href="#" class="button">Читать<img src="resources/images/icons/btn_circle.png"></a>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <a href="#" class="logo"><img src="resources/images/icons/logowhite.png"></a>
+      
+        <div class="medias">
+            <a href="#"><img src="resources/images/icons/instagram.png"></a>
+            <a href="#"><img src="resources/images/icons/facebook.png"></a>
+            <a href="#"><img src="resources/images/icons/twitter.png"></a>
+        </div>
+       
+        <ul>
+            <h1>Клиентам</h1>
+            <h2>Продукция</h2>
+            <h2>Решения</h2>
+            <h2>Где купить?</h2>
+            <h2>Дизайнерам и архитекторам</h2>
+            <h2>Дилерам</h2>
+            <h2>Защита проекта</h2>
+            <h2>Скачать каталог</h2>
+        </ul>
+
+        <ul>
+            <h1>О компании</h1>
+            <h2>Портфолио</h2>
+            <h2>Новости и события</h2>
+            <h2>Контакты</h2>
+        </ul>
+
+        <ul>
+            <h1>Помощь</h1>
+            <h2>Оплата и доставка</h2>
+            <h2>Гарантия и сервис</h2>
+        </ul>
+
+        <div class="contact">
+            <h1>Телефон</h1>
+            <h2>+7 (495) 125-10-07</h2>
+        </div>
+
+        <div class="contact">
+            <h1>Почта</h1>
+            <h2>INFO@H-T-L.RU</h2>
+        </div>
+ 
+        <img src="resources/images/icons/line.png" class="line">
+
+        <h3>Политика конфиденциальности</h3>
+
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="slider.js"></script> 
+</body>
+</html>
